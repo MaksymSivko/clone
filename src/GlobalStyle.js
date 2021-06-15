@@ -12,5 +12,18 @@ export const GlobalStyle = createGlobalStyle`
     min-width: 320px;
     font-family: "Rubik", sans-serif;
     color: #393c41;
+    overflow-x: hidden;
+  }
+
+  @keyframes animDown {
+    0%,20%,50%,80%,100%{
+      transform: translateY(0);
+    }
+    40%{
+       transform: translateY(5px);
+    }
+    60%{
+       transform: translateY(3px);
+    }
   }
 `;
