@@ -33,6 +33,13 @@ export const Home = () => {
         leftBtn="Customer Order"
         rightBtn="Existing Inventory"
       />
+      <Section
+        title="Lowest Cost Solar Penel in America"
+        description="Money back guarantee"
+        backgroundImg="/images/solar-panel.jpg"
+        leftBtn="Order now"
+        rightBtn="Learn more"
+      />
     </Container>
   );
 };
