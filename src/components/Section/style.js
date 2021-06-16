@@ -24,17 +24,17 @@ export const ButtonGroup = styled.div`
 `;
 
 export const LeftButton = styled.div`
-  width: 100%;
-  min-width: 250px;
-  max-width: 300px;
+  width: 260px;
+  height: 40px;
   background: rgba(23, 26, 32, 0.8);
   color: #fff;
-  text-align: center;
   white-space: nowrap;
-  padding: 12px 20px;
   border-radius: 100px;
   opacity: 0.85;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 12px;
   cursor: pointer;
   margin: 8px;

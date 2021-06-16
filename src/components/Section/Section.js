@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal';
 import {
   ItemText,
   Wrap,
@@ -16,21 +17,23 @@ export const Section = ({
   leftBtn,
   rightBtn,
 }) => {
-  // const [title, description, backgroundImg, leftBtn, rightBtn] = props;
-
   return (
     <Wrap backgroundImg={backgroundImg}>
-      <ItemText>
-        <h1>{title}</h1>
-        <p>{description}</p>
-      </ItemText>
-      <Buttons>
-        <ButtonGroup>
-          <LeftButton>{leftBtn}</LeftButton>
-          <RightButton>{rightBtn}</RightButton>
-        </ButtonGroup>
-        <DownArrow src="/images/down-arrow.svg" />
-      </Buttons>
+      <Fade bottom>
+        <ItemText>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </ItemText>
+      </Fade>
+      <Fade bottom>
+        <Buttons>
+          <ButtonGroup>
+            {leftBtn && <LeftButton>{leftBtn}</LeftButton>}
+            {rightBtn && <RightButton>{rightBtn}</RightButton>}
+          </ButtonGroup>
+          <DownArrow src="/images/down-arrow.svg" />
+        </Buttons>
+      </Fade>
     </Wrap>
   );
 };

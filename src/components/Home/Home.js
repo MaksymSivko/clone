@@ -40,6 +40,19 @@ export const Home = () => {
         leftBtn="Order now"
         rightBtn="Learn more"
       />
+      <Section
+        title="Solar for New Roofs"
+        description="Solar Roofs Costs Less Then a New Roofs"
+        backgroundImg="/images/solar-roof.jpg"
+        leftBtn="Order now"
+        rightBtn="Learn more"
+      />
+      <Section
+        title="Accessories"
+        description=""
+        backgroundImg="/images/accessories.jpg"
+        leftBtn="Shop now"
+      />
     </Container>
   );
 };
