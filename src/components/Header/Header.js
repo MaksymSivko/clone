@@ -12,25 +12,25 @@ export const Header = () => {
 
         <Menu>
           <MenuItem>
-            <a href="#">Model S</a>
+            <a href="/a">Model S</a>
           </MenuItem>
           <MenuItem>
-            <a href="#">Model 3</a>
+            <a href="/#">Model 3</a>
           </MenuItem>
           <MenuItem>
-            <a href="#">Model X</a>
+            <a href="/#">Model X</a>
           </MenuItem>
           <MenuItem>
-            <a href="#">Model Y</a>
+            <a href="/#">Model Y</a>
           </MenuItem>
         </Menu>
 
         <MenuRight>
           <MenuItem>
-            <a href="#">Shop</a>
+            <a href="/#">Shop</a>
           </MenuItem>
           <MenuItem>
-            <a href="#">Tesla Account</a>
+            <a href="/#">Tesla Account</a>
           </MenuItem>
           <HamburgerMenu />
         </MenuRight>
