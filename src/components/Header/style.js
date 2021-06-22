@@ -11,11 +11,8 @@ export const Container = styled.header`
   justify-content: space-between;
   padding: 20px;
 `;
-export const UnderHeader = styled.div``;
 
 export const Menu = styled.div`
-  /* flex: 1; */
-
   @media (max-width: 768px) {
     &.activeMenu {
       width: 100%;

@@ -19,12 +19,14 @@ export const Section = ({
 }) => {
   return (
     <Wrap backgroundImg={backgroundImg}>
-      <Fade bottom>
-        <ItemText>
+      <ItemText>
+        <Fade left>
           <h1>{title}</h1>
+        </Fade>
+        <Fade right>
           <p>{description}</p>
-        </ItemText>
-      </Fade>
+        </Fade>
+      </ItemText>
       <Fade bottom>
         <Buttons>
           <ButtonGroup>
