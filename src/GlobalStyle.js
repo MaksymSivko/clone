@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -13,6 +14,10 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Rubik", sans-serif;
     color: #393c41;
     overflow-x: hidden;
+
+    &.hidden{
+      overflow: hidden;
+    }
   }
 
   a{

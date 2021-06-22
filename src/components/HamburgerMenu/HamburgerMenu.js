@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from './style';
 
-export const HamburgerMenu = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+export const HamburgerMenu = ({ menu, menuOptions }) => {
+  const [burgerStatus, setBurgerStatus] = useState(false);
 
   const clickMenu = () => {
-    setOpenMenu(!openMenu);
+    setBurgerStatus(!burgerStatus);
+    menu(!burgerStatus);
+    document.body.classList.toggle('hidden');
   };
 
-  return <Container onClick={clickMenu} className={openMenu ? 'active' : ''} />;
+  useEffect(() => {
+    setBurgerStatus(menuOptions);
+  }, [menuOptions]);
+
+  return (
+    <Container onClick={clickMenu} className={burgerStatus ? 'active' : ''} />
+  );
 };

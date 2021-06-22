@@ -1,14 +1,15 @@
 import React from 'react';
 import { Header } from './components/Header/Header';
 import { Home } from './components/Home/Home';
+import styled from 'styled-components/macro';
 
-function App() {
+const AppContainer = styled.div``;
+
+export const App = () => {
   return (
-    <div className="App">
+    <AppContainer>
       <Header />
       <Home />
-    </div>
+    </AppContainer>
   );
-}
-
-export default App;
+};

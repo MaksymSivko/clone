@@ -18,6 +18,7 @@ export const ItemText = styled.div`
 export const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -50,10 +51,11 @@ export const RightButton = styled(LeftButton)`
 `;
 
 export const DownArrow = styled.img`
-  margin-top: 20px;
+  margin: 20px 0;
   height: 40px;
   overflow-x: hidden;
   animation: animDown 1.5s infinite;
+  cursor: pointer;
 `;
 
 export const Buttons = styled.div`

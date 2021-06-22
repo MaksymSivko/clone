@@ -5,10 +5,11 @@ export const Container = styled.div`
   width: 20px;
   height: 20px;
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
-
+  display: none;
+  position: relative;
+  z-index: 1100;
   &::after,
   &::before {
     content: '';
@@ -36,5 +37,9 @@ export const Container = styled.div`
 
   &.active::after {
     transform: translateY(0) rotate(-45deg);
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
   }
 `;
